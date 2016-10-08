@@ -1,0 +1,14 @@
+[
+    {
+        "name" :"Bill",
+        "age":13,
+        "contact":"2342553",
+        "class": 12
+    },
+    {
+        "name" :"Chill",
+        "age":17,
+        "contact":"29837",
+        "class": 13
+    }
+]

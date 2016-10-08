@@ -3,11 +3,11 @@
 
     angular
         .module('studmon')
-        .controller('StudentController', StudentController);
+        .controller('teacherController', teacherController);
 
-    StudentController.$inject = ['$http'];
+    teacherController.$inject = ['$http'];
 
-    function StudentController($http) {
+    function teacherController($http) {
         var vm = this;
         vm.students = [];
 

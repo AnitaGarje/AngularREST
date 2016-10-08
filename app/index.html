@@ -5,37 +5,27 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </head>
-    <body ng-controller="StudentController as ctrl">
-        {{ ctrl.greet }}
-        <div class="container">
-          <table class="table table-striped table-bordered">
-            <thead>
-              <tr>
-                <th>name</th>
-                <th>age</th>
-                <th>contact</th>
-                <th>class</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>John</td>
-                <td>13</td>
-                <td>2342553</td>
-                <td>12th</td>
-              </tr>
-               <tr>
-                <td>Chill</td>
-                <td>13</td>
-                <td>2342553</td>
-                <td>12th</td>
-              </tr>
-            </tbody>
-          </table>
+    <body>
+
+        <ul>
+          <li>
+            <a ui-sref="students">Students</a>
+          </li>
+          <li>
+            <a ui-sref="teacher">Teachers</a>
+          </li>
+        </ul>
+
+        <div ui-view>
         </div>
+
+        {{ ctrl.greet }}
         <script src="/node_modules/angular/angular.js"></script>
+        <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="app.module.js"></script>
+        <script src="app.route.js"></script>
         <script src="student/studentController.js"></script>
+        <script src="teacher/teacherController.js"></script>
 
     </body>
 </html>
