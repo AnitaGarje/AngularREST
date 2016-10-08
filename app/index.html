@@ -1,0 +1,13 @@
+<html ng-app="myApp">
+    <body ng-controller="MyController as ctrl">
+        {{ greet }}
+        <script src="/node_modules/angular/angular.js"></script>
+        <script>
+            angular.module("myApp",[]);
+
+            angular.module("myApp").controller("MyController",function(){
+                this.greet = "Hello World";
+            });
+        </script>
+    </body>
+</html>

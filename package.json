@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/AnitaGarje/AngularREST#readme",
   "dependencies": {
-    "angular": "^1.5.8"
+    "angular": "^1.5.8",
+    "http-server": "^0.9.0"
   }
 }
