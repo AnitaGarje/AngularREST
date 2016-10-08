@@ -18,17 +18,11 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>John</td>
-                <td>13</td>
-                <td>2342553</td>
-                <td>12th</td>
-              </tr>
-               <tr>
-                <td>Chill</td>
-                <td>13</td>
-                <td>2342553</td>
-                <td>12th</td>
+              <tr ng-repeat="student in ctrl.students">
+                <td>{{ student.name }}</td>
+                <td>{{ student.class }}</td>
+                <td>{{ student.contact }}</td>
+                <td>{{ student.class }}</td>
               </tr>
             </tbody>
           </table>

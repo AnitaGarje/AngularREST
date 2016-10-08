@@ -5,16 +5,26 @@
         .module('studmon')
         .controller('StudentController', StudentController);
 
-    StudentController.$inject = [];
-    
-    function StudentController() {
-        var vm = this;
-        vm.greet = "Hello World";
+    StudentController.$inject = ['$http'];
 
-        activate();
+    function StudentController($http) {
+        var vm = this;
+        vm.students = [];
+
+        fetchData();
 
         ////////////////
 
-        function activate() { }
+        function fetchData() {
+            $http
+                .get('students.json')
+                .then(function success(data){
+                    console.log(data);
+                    vm.students = data.data;
+                })
+                .catch(function failure(data){
+                    console.log(data);
+                });            
+        }
     }
 })();
