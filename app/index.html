@@ -1,20 +1,38 @@
 <html ng-app="studmon">
 <head>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/app/customcss/main.css">
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </head>
     <body>
 
-        <ul>
-          <li>
-            <a ui-sref="students">Students</a>
-          </li>
-          <li>
-            <a ui-sref="teacher">Teachers</a>
-          </li>
-        </ul>
+<nav id="nav1" class="navbar ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">AngularREST</a>
+    </div>
+    <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Student</a></li>
+        <li><a href="#">Teacher</a></li>
+        <li><a href="#">Exam</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
         <div ui-view>
         </div>
