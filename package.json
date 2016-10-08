@@ -1,0 +1,29 @@
+{
+  "name": "angularrest",
+  "version": "1.0.0",
+  "description": "This is project to test connection between angular and laravel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnitaGarje/AngularREST.git"
+  },
+  "keywords": [
+    "angular",
+    "laravel",
+    "php",
+    "javascript"
+  ],
+  "author": "Anita Garje",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnitaGarje/AngularREST/issues"
+  },
+  "homepage": "https://github.com/AnitaGarje/AngularREST#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "http-server": "^0.9.0"
+  }
+}
